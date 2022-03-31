@@ -1,6 +1,7 @@
 package binarySearch;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class BinarySearch {
     public static void main(String[] args) {
@@ -13,6 +14,7 @@ public class BinarySearch {
 
             //Binary Search as static method in Arrays
             int index = Arrays.binarySearch(array, "ccc");
+//            int index2 = Collections.binarySearch(array, "ccc");
             System.out.println("INDEX = " + index);
         }
     }
