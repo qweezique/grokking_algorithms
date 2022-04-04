@@ -27,6 +27,6 @@ _Дополнительно:_
 ___
 #### Полезные ссылки:
 1. [JavaRush примеры алгоритмов по книге "Грокаем Алгоритмы"](https://javarush.ru/groups/posts/1899-grokaem-algoritmih-ili-bezboleznennoe-vvedenie-v-algoritmih) 
-2. [Цикл видео-уроков Наиля Алишева по алгоритмам]()
+2. [Цикл видео-уроков Наиля Алишева по алгоритмам](https://youtube.com/playlist?list=PLAma_mKffTOT_qpTFv4KdD9DhOAUd5Rqy)
 
 https://t.me/thewayofjavajunior
