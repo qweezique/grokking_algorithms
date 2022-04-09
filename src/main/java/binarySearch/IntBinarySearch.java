@@ -6,7 +6,7 @@ import linearSearch.LinearSearch;
 import java.util.Arrays;
 
 
-public class BinarySearch {
+public class IntBinarySearch {
 
     public static final int SEARCHING_ITEM = 9255;
 
@@ -17,7 +17,6 @@ public class BinarySearch {
             //Arrays.stream(generatedSortedArray).forEach(System.out::println); // Убедимся, что массив отсортирован. Алгоритм бинарного поиска работает только для сортированных массивов/списков
 
             ArrayIntGenerator.printArrayStatistic(generatedSortedArray); // Выведем сводную информацию о массиве
-
 
             long startWorkingLinearSearching = System.currentTimeMillis();
             int indexLinearSearch = LinearSearch.getIndexOfSearchingItem(generatedSortedArray, SEARCHING_ITEM);
@@ -77,8 +76,8 @@ public class BinarySearch {
             return binarySearchRecursive(sortedArray, key, middle + 1, high);
         }
     }
-    /**
-     * Ссылка на код, и сам код взят из видеоролика Наиля Алишева про Бинарный поиск
-     * https://gist.github.com/NeilAlishev/88abc5c7bfbf7eea9d942837cd993e82
+    /*
+      Ссылка на код, и сам код взят из видеоролика Наиля Алишева про Бинарный поиск
+      https://gist.github.com/NeilAlishev/88abc5c7bfbf7eea9d942837cd993e82
      */
 }
