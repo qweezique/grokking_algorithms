@@ -1,25 +1,25 @@
 package binarySearch;
 
 import generator.ArrayIntGenerator;
-import linearSearch.LinearSearch;
+import linearSearch.IntArrayLinearSearcher;
 
 import java.util.Arrays;
 
 
-public class IntBinarySearch {
+public class IntArrayBinarySearch {
 
     public static final int SEARCHING_ITEM = 9255;
 
     public static void main(String[] args) {
         {
-            int[] generatedSortedArray = Arrays.stream(ArrayIntGenerator.generate(100_000_000)).sorted().toArray(); // Генерируем массив, передаем размерность в аргументы. Каждый элемент массива - это рандомное число от 0 до 10_000
+            int[] generatedSortedArray = ArrayIntGenerator.generate(100_000_000); // Генерируем массив, передаем размерность в аргументы. Каждый элемент массива - это рандомное число от 0 до 10_000
 
-            //Arrays.stream(generatedSortedArray).forEach(System.out::println); // Убедимся, что массив отсортирован. Алгоритм бинарного поиска работает только для сортированных массивов/списков
+            Arrays.stream(generatedSortedArray).forEach(System.out::println); // Убедимся, что массив отсортирован. Алгоритм бинарного поиска работает только для сортированных массивов/списков
 
             ArrayIntGenerator.printArrayStatistic(generatedSortedArray); // Выведем сводную информацию о массиве
 
             long startWorkingLinearSearching = System.currentTimeMillis();
-            int indexLinearSearch = LinearSearch.getIndexOfSearchingItem(generatedSortedArray, SEARCHING_ITEM);
+            int indexLinearSearch = IntArrayLinearSearcher.getIndexOfSearchingItem(generatedSortedArray, SEARCHING_ITEM);
             System.out.printf("%nЗатраченное время при линейном поиске = %s, мс%n" +
                     "Элемент найден под индексом %s", System.currentTimeMillis() - startWorkingLinearSearching, indexLinearSearch);
 

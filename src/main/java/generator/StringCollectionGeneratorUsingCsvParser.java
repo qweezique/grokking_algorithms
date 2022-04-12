@@ -10,14 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static utils.Constants.Paths.PERSON_CSV;
+
 public class StringCollectionGeneratorUsingCsvParser {
 
     private static CSVReader csvReader;
 
-
     public static void main(String[] args) {
-        String path = "src/main/resources/csv/person.csv";
-        StringCollectionGeneratorUsingCsvParser.generateSortedDistinctFirstAndSecondNameArrayListFromFilePath(path)
+        StringCollectionGeneratorUsingCsvParser.generateSortedDistinctFirstAndSecondNameArrayListFromFilePath(PERSON_CSV)
                 .forEach(System.out::println);
     }
 

@@ -7,13 +7,14 @@ import java.util.stream.IntStream;
 
 public class ArrayIntGenerator {
 
-    private static int[] array;
-
     public static int[] generate(int arraySize) {
         Random random = new Random();
-        array = new int[arraySize];
-        IntStream.range(0, arraySize).forEach(i -> array[i] = random.nextInt(10_000));
-        return array;
+
+        return IntStream
+                .generate(() -> random.nextInt(10_000))
+                .limit(arraySize)
+                .sorted()
+                .toArray();
     }
 
     public static void printArrayStatistic(int[] array) {
@@ -21,6 +22,6 @@ public class ArrayIntGenerator {
         System.out.printf("%nGenerated array summary:%n" +
                 "-size = %d%n" +
                 "-min value = %d%n" +
-                "-max value = %d%n", intSummaryStatistics.getCount(), intSummaryStatistics.getMin(), intSummaryStatistics.getMax(), intSummaryStatistics.getAverage(), intSummaryStatistics.getSum());
+                "-max value = %d%n", intSummaryStatistics.getCount(), intSummaryStatistics.getMin(), intSummaryStatistics.getMax());
     }
 }
