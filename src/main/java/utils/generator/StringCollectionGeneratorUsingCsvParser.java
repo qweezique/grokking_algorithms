@@ -1,4 +1,4 @@
-package generator;
+package utils.generator;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;

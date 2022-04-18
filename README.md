@@ -24,13 +24,14 @@ ___
 
 ___
 _Дополнительно:_
-- [Линейный поиск](src/main/java/linearSearch/LinearSearch.java)
-- [Генератор числовых массивов](src/main/java/generator/ArrayIntGenerator.java)
+- [Линейный поиск](src/main/java/linearSearch/IntArrayLinearSearcher.java)
+- [Генератор числовых массивов](src/main/java/utils/generator/ArrayIntGenerator.java)
 
 
 ___
 #### Полезные ссылки:
 1. [JavaRush примеры алгоритмов по книге "Грокаем Алгоритмы"](https://javarush.ru/groups/posts/1899-grokaem-algoritmih-ili-bezboleznennoe-vvedenie-v-algoritmih) 
 2. [Цикл видео-уроков Наиля Алишева по алгоритмам](https://youtube.com/playlist?list=PLAma_mKffTOT_qpTFv4KdD9DhOAUd5Rqy)
+3. [Визуальное представление алгоритмов](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 
-https://t.me/thewayofjavajunior
+##[https://t.me/thewayofjavajunior](https://t.me/thewayofjavajunior)

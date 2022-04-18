@@ -1,6 +1,6 @@
 package binarySearch;
 
-import generator.ArrayIntGenerator;
+import utils.generator.ArrayIntGenerator;
 import linearSearch.IntArrayLinearSearcher;
 
 import java.util.Arrays;

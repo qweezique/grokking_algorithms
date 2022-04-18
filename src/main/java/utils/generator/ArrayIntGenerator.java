@@ -1,4 +1,4 @@
-package generator;
+package utils.generator;
 
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
